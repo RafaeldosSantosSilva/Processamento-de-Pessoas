@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processar Pessoas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Processar Pessoas</h1>
+        <form id="pessoa-form">
+            <input type="text" id="nome" placeholder="Nome" required>
+            <input type="number" id="idade" placeholder="Idade" required>
+            <select id="status" required>
+                <option value="" disabled selected>Status de Pagamento</option>
+                <option value="pago">Pago</option>
+                <option value="não pago">Não Pago</option>
+            </select>
+            <button type="submit">Adicionar Pessoa</button>
+        </form>
+        <button id="processar-btn">Processar</button>
+        
+        <h2>Pessoas Pagas</h2>
+        <ul id="resultado-pago"></ul>
+        
+        <h2>Pessoas Não Pagas</h2>
+        <ul id="resultado-nao-pago"></ul>
+        
+        <h2>Menores de Idade</h2>
+        <ul id="resultado-menores"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
